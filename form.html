@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Бронювання</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="menu.html">Меню</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="form.html" class="active">Бронювання</a></li>
+        </ul>
+    </nav>
+
+    <section class="booking-page">
+    <h2>Бронювання</h2>
+    <div class="form-card highlight">
+        <h3>Забронювати столик</h3>
+
+        <form>
+            <input type="text" placeholder="Ваше ім'я" required>
+
+            <div class="row">
+                <input type="date" required>
+                <input type="time" required>
+            </div>
+
+            <input type="number" placeholder="Кількість гостей" min="1" required>
+
+            <label>
+                <input type="checkbox" required>
+                Я згоден з правилами
+            </label>
+
+            <button type="submit" class="btn dark">
+                Забронювати столик
+            </button>
+        </form>
+    </div>
+</section>
+
+<section class="club-page">
+    <h2>Клуб любителів кави</h2>
+
+    <div class="form-card">
+        <form>
+            <input type="text" placeholder="Ім'я" required>
+            <input type="email" placeholder="Email" required>
+
+            <button type="submit" class="btn">
+                Реєстрація
+            </button>
+        </form>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2026 Кава | Вул. Кавова, 12</p>
+    </footer>
+</body>
+</html>
